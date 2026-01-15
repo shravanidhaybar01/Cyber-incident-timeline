@@ -46,7 +46,31 @@ Weak password and repeated login attempts from suspicious IP.
 - Implement IP-based rate limiting
 - Strengthen password policy
 - Continuous login monitoring
-  
+
+  ## Severity Justification
+This incident was classified as *Medium* severity because:
+- Unauthorized access attempts were detected
+- No confirmed data breach occurred
+- The incident was contained quickly
+
+ ## Evidence / Logs (Simulated)
+- Multiple failed login attempts from a single IP address
+- Authentication failure alerts triggered
+- Account lockout events recorded
+
+ ## Post-Incident Review
+
+### What Went Well
+- Alerts triggered quickly
+- Automated account lockout worked as expected
+
+### What Could Be Improved
+- Earlier detection of brute force patterns
+- Stronger password enforcement
+
+## Incident Status
+Closed
+
 ## Lessons Learned
 - Enable MFA
 - Improve login monitoring
